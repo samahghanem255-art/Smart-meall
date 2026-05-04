@@ -1,6 +1,3 @@
-smart-meal-pro/
- ├── package.json   ✔️ (موجود من البداية)
- ├── node_modules/
- ├── public/
- ├── src/px create-react-app smart-meal-pro
-
+npx create-react-app smart-meal-pro
+cd smart-meal-pro
+npm install react-router-dom
