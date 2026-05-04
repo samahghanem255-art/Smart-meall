@@ -3,5 +3,4 @@ smart-meal-pro/
  ├── node_modules/
  ├── public/
  ├── src/px create-react-app smart-meal-pro
-cd smart-meal-pro
-npm install react-router-do
+
