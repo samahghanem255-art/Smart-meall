@@ -1,9 +1,4 @@
-/src
- ├── pages
- │    ├── Home.jsx
- │    ├── Menu.jsx
- │    ├── Details.jsx
- │    └── Cart.jsx
+src/
  ├── components
  │    ├── Navbar.jsx
  │    └── FoodCard.jsx
@@ -11,5 +6,11 @@
  │    └── CartContext.js
  ├── data
  │    └── foodData.js
+ ├── pages
+ │    ├── Home.jsx
+ │    ├── Menu.jsx
+ │    ├── Details.jsx
+ │    └── Cart.jsx
  ├── App.js
- └── App.css
+ ├── App.css
+ └── index.js
