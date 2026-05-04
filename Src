@@ -1,0 +1,15 @@
+/src
+ ├── pages
+ │    ├── Home.jsx
+ │    ├── Menu.jsx
+ │    ├── Details.jsx
+ │    └── Cart.jsx
+ ├── components
+ │    ├── Navbar.jsx
+ │    └── FoodCard.jsx
+ ├── context
+ │    └── CartContext.js
+ ├── data
+ │    └── foodData.js
+ ├── App.js
+ └── App.css
