@@ -1,0 +1,39 @@
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import Navbar from "../components/Navbar";
+
+export default function Cart() {
+  const { cart, removeFromCart, increase, decrease } = useContext(CartContext);
+
+  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+  return (
+    <>
+      <Navbar />
+      <div className="container">
+        <h2>🛒 السلة</h2>
+
+        {cart.length === 0 ? (
+          <p>السلة فارغة</p>
+        ) : (
+          cart.map(item => (
+            <div key={item.id}>
+              <h4>{item.name}</h4>
+              <p>{item.price} DA</p>
+
+              <button onClick={() => decrease(item.id)}>-</button>
+              <span> {item.quantity} </span>
+              <button onClick={() => increase(item.id)}>+</button>
+
+              <button onClick={() => removeFromCart(item.id)}>
+                حذف
+              </button>
+            </div>
+          ))
+        )}
+
+        <h3>المجموع: {total} DA</h3>
+      </div>
+    </>
+  );
+}
