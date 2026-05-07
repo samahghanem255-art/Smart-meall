@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Eye | المنصة الإعلامية الذكية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00c6ff"/>
+                <stop offset="100%" style="stop-color:#0066ff"/>
+              </linearGradient>
+            </defs>
+            <ellipse cx="30" cy="30" rx="28" ry="16" fill="none" stroke="url(#eyeGrad)" stroke-width="3"/>
+            <circle cx="30" cy="30" r="10" fill="url(#eyeGrad)"/>
+            <circle cx="30" cy="30" r="5" fill="#0a0a1a"/>
+            <circle cx="32" cy="28" r="2" fill="white" opacity="0.8"/>
+          </svg>
+        </div>
+        <span class="logo-text">Digital <strong>Eye</strong></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">الرئيسية</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#features">المميزات</a></li>
+        <li><a href="#news">الأخبار</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-outline">تسجيل الدخول</button>
+        <button class="btn-primary">ابدأ مجاناً</button>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        منصة إعلامية مدعومة بالذكاء الاصطناعي
+      </div>
+      <h1 class="hero-title">
+        أعِد تعريف<br/>
+        <span class="gradient-text">الإعلام الرقمي</span><br/>
+        بعين ذكية
+      </h1>
+      <p class="hero-desc">
+        Digital Eye — منصة متكاملة تستخدم أحدث تقنيات الذكاء الاصطناعي لتحسين الإنتاج الإعلامي،
+        تحليل الجمهور، وتوصيل المحتوى للأشخاص المناسبين في الوقت المناسب.
+      </p>
+      <div class="hero-btns">
+        <button class="btn-hero-primary">اكتشف المنصة <span>←</span></button>
+        <button class="btn-hero-outline">▶ شاهد العرض التوضيحي</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="500">0</span><span>+</span>
+          <p>مؤسسة إعلامية</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="98">0</span><span>%</span>
+          <p>رضا العملاء</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="40">0</span><span>%</span>
+          <p>تخفيض التكلفة</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-main">
+        <div class="card-header">
+          <div class="card-dots"><span></span><span></span><span></span></div>
+          <span>Digital Eye Analytics</span>
+        </div>
+        <div class="chart-area">
+          <div class="chart-bars">
+            <div class="bar" style="--h:60%"><span>يناير</span></div>
+            <div class="bar" style="--h:80%"><span>فبراير</span></div>
+            <div class="bar active" style="--h:95%"><span>مارس</span></div>
+            <div class="bar" style="--h:70%"><span>أبريل</span></div>
+            <div class="bar" style="--h:85%"><span>مايو</span></div>
+          </div>
+        </div>
+        <div class="card-stats-row">
+          <div class="mini-stat">
+            <span class="mini-icon">👁</span>
+            <div><strong>2.4M</strong><small>مشاهدة</small></div>
+          </div>
+          <div class="mini-stat">
+            <span class="mini-icon">📊</span>
+            <div><strong>+34%</strong><small>نمو</small></div>
+          </div>
+          <div class="mini-stat">
+            <span class="mini-icon">🎯</span>
+            <div><strong>98%</strong><small>دقة</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="floating-badge fb1">🤖 AI محلل</div>
+      <div class="floating-badge fb2">📡 بث مباشر</div>
+      <div class="floating-badge fb3">⚡ معالجة فورية</div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker-label">عاجل</div>
+    <div class="ticker-track">
+      <span>🔴 تقنية AI تُحدث ثورة في الإعلام الرقمي &nbsp;&nbsp;&nbsp;</span>
+      <span>📊 Digital Eye تتجاوز 500 مؤسسة إعلامية شريكة &nbsp;&nbsp;&nbsp;</span>
+      <span>🚀 إطلاق منصة التحرير التلقائي بالذكاء الاصطناعي &nbsp;&nbsp;&nbsp;</span>
+      <span>🌍 توسع إقليمي في 15 دولة عربية &nbsp;&nbsp;&nbsp;</span>
+      <span>💡 تحليل البيانات الضخمة بدقة 98% &nbsp;&nbsp;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-header">
+      <div class="section-tag">خدماتنا</div>
+      <h2>حلول إعلامية <span class="gradient-text">متكاملة</span></h2>
+      <p>نقدم منظومة متكاملة من الأدوات الذكية لتحويل رؤيتك الإعلامية إلى واقع رقمي متميز</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon" style="--c:#00c6ff">
+          <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 20 L17 24 L27 14" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+        </div>
+        <h3>إنتاج المحتوى الذكي</h3>
+        <p>أدوات AI متقدمة لإنتاج محتوى رقمي تفاعلي يجذب الجمهور المستهدف</p>
+        <ul>
+          <li>✦ تحرير تلقائي بالـ NLP</li>
+          <li>✦ توليد المحتوى المرئي</li>
+          <li>✦ ترجمة فورية متعددة اللغات</li>
+        </ul>
+        <a href="#" class="card-link">اكتشف أكثر →</a>
+      </div>
+      <div class="service-card featured">
+        <div class="featured-badge">الأكثر طلباً</div>
+        <div class="service-icon" style="--c:#ff6b35">
+          <svg viewBox="0 0 40 40"><rect x="4" y="8" width="32" height="24" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 16h32" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="24" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>تحليل البيانات الضخمة</h3>
+        <p>استخراج رؤى عميقة من بيانات التفاعل الجماهيري لتحسين استراتيجيتك</p>
+        <ul>
+          <li>✦ تحليل سلوك الجمهور</li>
+          <li>✦ تتبع الأداء اللحظي</li>
+          <li>✦ توقعات ذكية بالـ ML</li>
+        </ul>
+        <a href="#" class="card-link">اكتشف أكثر →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon" style="--c:#a855f7">
+          <svg viewBox="0 0 40 40"><path d="M20 4 L36 12 L36 28 L20 36 L4 28 L4 12 Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>الإنتاج السحابي</h3>
+        <p>بنية تحتية سحابية متطورة تضمن استمرارية الإنتاج وتقليل التكاليف</p>
+        <ul>
+          <li>✦ تخزين لا محدود</li>
+          <li>✦ بث مباشر عالي الجودة</li>
+          <li>✦ أمان وحماية متقدمة</li>
+        </ul>
+        <a href="#" class="card-link">اكتشف أكثر →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon" style="--c:#10b981">
+          <svg viewBox="0 0 40 40"><circle cx="20" cy="12" r="6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="28" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="28" r="5" fill="none" stroke="currentColor" stroke-width="2"/><line x1="20" y1="18" x2="8" y2="23" stroke="currentColor" stroke-width="1.5"/><line x1="20" y1="18" x2="32" y2="23" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <h3>استهداف الجمهور</h3>
+        <p>خوارزميات ذكية توصل المحتوى للجمهور المناسب في اللحظة المناسبة</p>
+        <ul>
+          <li>✦ تقسيم ديموغرافي دقيق</li>
+          <li>✦ توزيع متعدد المنصات</li>
+          <li>✦ تحسين SEO تلقائي</li>
+        </ul>
+        <a href="#" class="card-link">اكتشف أكثر →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="features-inner">
+      <div class="features-text">
+        <div class="section-tag">لماذا Digital Eye؟</div>
+        <h2>تقنية <span class="gradient-text">المستقبل</span><br/>في خدمة إعلامك</h2>
+        <p>نجمع بين الذكاء الاصطناعي وخبرة الإعلام لنقدم حلولاً غير مسبوقة</p>
+        <div class="feature-list">
+          <div class="feature-item">
+            <div class="feature-check">✓</div>
+            <div><strong>معالجة اللغة الطبيعية NLP</strong><p>تحرير وتحليل النصوص الإعلامية تلقائياً بدقة فائقة</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-check">✓</div>
+            <div><strong>لوحة تحكم موحدة</strong><p>إدارة كل قنواتك الإعلامية من مكان واحد</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-check">✓</div>
+            <div><strong>تقارير لحظية</strong><p>متابعة أداء المحتوى فور نشره مع توصيات فورية</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-check">✓</div>
+            <div><strong>تكامل مع كل المنصات</strong><p>ربط سلس مع يوتيوب، تيك توك، إنستغرام وغيرها</p></div>
+          </div>
+        </div>
+        <button class="btn-primary" style="margin-top:2rem;padding:1rem 2rem;font-size:1rem;">ابدأ تجربتك المجانية</button>
+      </div>
+      <div class="features-visual">
+        <div class="dashboard-mockup">
+          <div class="dash-header">
+            <div class="dash-logo">👁 Digital Eye</div>
+            <div class="dash-tabs">
+              <span class="dash-tab active">التحليلات</span>
+              <span class="dash-tab">المحتوى</span>
+              <span class="dash-tab">الجمهور</span>
+            </div>
+          </div>
+          <div class="dash-body">
+            <div class="dash-kpis">
+              <div class="kpi kpi-blue"><span>2.4M</span><small>مشاهدة اليوم</small><div class="kpi-trend">↑ 12%</div></div>
+              <div class="kpi kpi-orange"><span>184K</span><small>تفاعل</small><div class="kpi-trend">↑ 8%</div></div>
+              <div class="kpi kpi-purple"><span>98%</span><small>دقة AI</small><div class="kpi-trend">↑ 2%</div></div>
+            </div>
+            <div class="dash-chart">
+              <div class="dash-line-bars">
+                <div class="dl-bar" style="--h:50%"></div>
+                <div class="dl-bar" style="--h:70%"></div>
+                <div class="dl-bar" style="--h:60%"></div>
+                <div class="dl-bar active" style="--h:90%"></div>
+                <div class="dl-bar" style="--h:75%"></div>
+                <div class="dl-bar" style="--h:85%"></div>
+                <div class="dl-bar" style="--h:65%"></div>
+              </div>
+            </div>
+            <div class="dash-feed">
+              <div class="feed-item"><div class="feed-dot blue"></div><span>تم نشر مقال جديد</span><small>منذ 5 د</small></div>
+              <div class="feed-item"><div class="feed-dot orange"></div><span>تحليل جمهور جديد اكتمل</span><small>منذ 12 د</small></div>
+              <div class="feed-item"><div class="feed-dot green"></div><span>بث مباشر: 12,400 مشاهد</span><small>جارٍ الآن</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="news" id="news">
+    <div class="section-header">
+      <div class="section-tag">آخر الأخبار</div>
+      <h2>أحدث <span class="gradient-text">المستجدات</span></h2>
+    </div>
+    <div class="news-grid">
+      <div class="news-card big">
+        <div class="news-img" style="background:linear-gradient(135deg,#0066ff,#00c6ff)">
+          <div class="news-cat">تقنية</div>
+        </div>
+        <div class="news-body">
+          <div class="news-meta"><span>📅 15 مارس 2025</span><span>👁 8,240 مشاهدة</span></div>
+          <h3>كيف يُعيد الذكاء الاصطناعي رسم خريطة الإعلام الرقمي في الوطن العربي</h3>
+          <p>تشهد صناعة الإعلام العربي تحولاً جذرياً بفضل تقنيات الذكاء الاصطناعي...</p>
+          <a href="#" class="read-more">اقرأ المزيد ←</a>
+        </div>
+      </div>
+      <div class="news-side">
+        <div class="news-card small">
+          <div class="news-img-sm" style="background:linear-gradient(135deg,#ff6b35,#ff9a56)"><div class="news-cat">أعمال</div></div>
+          <div class="news-body">
+            <div class="news-meta"><span>📅 10 مارس 2025</span></div>
+            <h3>Digital Eye تُبرم شراكة مع 20 قناة إخبارية</h3>
+            <a href="#" class="read-more">اقرأ المزيد ←</a>
+          </div>
+        </div>
+        <div class="news-card small">
+          <div class="news-img-sm" style="background:linear-gradient(135deg,#a855f7,#7c3aed)"><div class="news-cat">ابتكار</div></div>
+          <div class="news-body">
+            <div class="news-meta"><span>📅 5 مارس 2025</span></div>
+            <h3>إطلاق محرر المحتوى الذكي بدعم GPT-4</h3>
+            <a href="#" class="read-more">اقرأ المزيد ←</a>
+          </div>
+        </div>
+        <div class="news-card small">
+          <div class="news-img-sm" style="background:linear-gradient(135deg,#10b981,#059669)"><div class="news-cat">تقرير</div></div>
+          <div class="news-body">
+            <div class="news-meta"><span>📅 1 مارس 2025</span></div>
+            <h3>تكاليف الإنتاج الإعلامي تنخفض 40% مع AI</h3>
+            <a href="#" class="read-more">اقرأ المزيد ←</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-orbs">
+      <div class="cta-orb cta-orb1"></div>
+      <div class="cta-orb cta-orb2"></div>
+    </div>
+    <div class="cta-content">
+      <h2>هل أنت مستعد لتحويل<br/><span class="gradient-text">رؤيتك الإعلامية</span> إلى واقع؟</h2>
+      <p>انضم إلى أكثر من 500 مؤسسة إعلامية تستخدم Digital Eye</p>
+      <div class="cta-btns">
+        <button class="btn-hero-primary">ابدأ تجربتك المجانية ←</button>
+        <button class="btn-hero-outline">تواصل مع فريقنا</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-header">
+      <div class="section-tag">تواصل معنا</div>
+      <h2>نحن هنا <span class="gradient-text">لمساعدتك</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item"><div class="contact-icon">📧</div><div><strong>البريد الإلكتروني</strong><p>info@digitaleye.ai</p></div></div>
+        <div class="contact-item"><div class="contact-icon">📞</div><div><strong>الهاتف</strong><p>+213 XX XXX XXXX</p></div></div>
+        <div class="contact-item"><div class="contact-icon">📍</div><div><strong>الموقع</strong><p>الجزائر العاصمة، الجزائر</p></div></div>
+        <div class="social-links">
+          <a href="#" class="social-btn">𝕏</a>
+          <a href="#" class="social-btn">in</a>
+          <a href="#" class="social-btn">▶</a>
+          <a href="#" class="social-btn">📘</a>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <input type="text" placeholder="الاسم الكامل" required/>
+          <input type="email" placeholder="البريد الإلكتروني" required/>
+        </div>
+        <input type="text" placeholder="اسم المؤسسة الإعلامية"/>
+        <textarea placeholder="رسالتك..." rows="4" required></textarea>
+        <button type="submit" class="btn-primary" style="width:100%;padding:1rem;font-size:1rem;">إرسال الرسالة ✉</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="eyeGrad2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#00c6ff"/><stop offset="100%" style="stop-color:#0066ff"/></linearGradient></defs>
+              <ellipse cx="30" cy="30" rx="28" ry="16" fill="none" stroke="url(#eyeGrad2)" stroke-width="3"/>
+              <circle cx="30" cy="30" r="10" fill="url(#eyeGrad2)"/>
+              <circle cx="30" cy="30" r="5" fill="#0a0a1a"/>
+              <circle cx="32" cy="28" r="2" fill="white" opacity="0.8"/>
+            </svg>
+          </div>
+          <span class="logo-text">Digital <strong>Eye</strong></span>
+        </div>
+        <p>منصة إعلامية رقمية متكاملة مدعومة بأحدث تقنيات الذكاء الاصطناعي</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h4>المنصة</h4><a href="#">الرئيسية</a><a href="#">خدماتنا</a><a href="#">المميزات</a><a href="#">الأسعار</a></div>
+        <div class="footer-col"><h4>الحلول</h4><a href="#">إنتاج المحتوى</a><a href="#">تحليل البيانات</a><a href="#">الإنتاج السحابي</a><a href="#">استهداف الجمهور</a></div>
+        <div class="footer-col"><h4>الشركة</h4><a href="#">من نحن</a><a href="#">الأخبار</a><a href="#">الشراكات</a><a href="#">تواصل معنا</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Digital Eye. جميع الحقوق محفوظة</p>
+      <div><a href="#">سياسة الخصوصية</a><a href="#">شروط الاستخدام</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
